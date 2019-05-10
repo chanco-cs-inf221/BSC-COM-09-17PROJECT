@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ProjectItem from './PROJ/ProjectItem.js';
 import AddProject from './PROJ/AddProject.js';
 const projects = [
@@ -58,8 +59,11 @@ render(){
 	<div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-        </header>
-        <h1>Projects Manager</h1>
+             
+            </header>
+           
+            <h1>Projects Manager</h1>
+
         <AddProject
           onAdd={this.onAdd}
         />
@@ -74,6 +78,7 @@ render(){
             );
           })
         }
+        
  </div>
 );
  }
